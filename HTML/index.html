@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+   @import "tailwindcss";
+   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+      @theme {
+        --color-secordnary: #212121;
+        --color-primary: #fff;
+        --color-hover: #282828;
+        --color-main: #121212;
+        --font-manrope: "Manrope", serif;
+      }
+      @font-face {
+         font-family: "manrope";
+         src: url(../Assets/fonts/Manrope-SemiBold.ttf);
+         font-weight: semi-bold;
+      }
+    </style>
+
+</head>
+<body>
+    <section class="flex">
+      <aside id="separator-sidebar" class="w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+         <div class="h-full pl-3 py-4 overflow-y-auto bg-secordnary">
+          <div class="flex items-center w-50 pb-5">
+              <img src="../Assets/Images/Logo.svg" alt="Logo-icon">
+          </div>
+            <ul class="space-y-2 font-medium">
+               <li>
+                  <a href="#" class="flex items-center justify-between p-2 text-green-600 rounded-lg hover:bg-hover group">
+                      <div class="flex ">
+                          <img src="../Assets/Icon/home.svg" alt="home icon">
+                          <span class="ms-3">Home</span>
+                      </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                  
+                     <img src="../Assets/Icon/discover.svg" alt="">
+                     <span class="flex-1 ms-3 whitespace-nowrap">Discover</span>
+  
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"/>
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Radio</span>
+                     
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center justif-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/album.svg" alt="Albums-icon">
+                     <span class="flex-1 ms-3 whitespace-nowrap">Albums</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/podcast.svg" alt="Podcasts-icon">
+                     <span class="flex-1 ms-3 whitespace-nowrap">Podcasts</span>
+                  </a>
+               </li>
+             
+              
+            </ul>
+            <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+              <li class="text-gray-400 pl-3 font-manrope">LIBRARY</li>
+               <li>
+                 <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/recent.svg" alt="Recent-icon">
+                     <span class="ms-3">Recently Added</span>
+                  </a>
+               </li>
+               <li>
+                 <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/favorite.svg" alt="favorite-icon">
+                     <span class="ms-3">favorite Songs</span>
+                  </a>
+               </li>
+               <li>
+                 <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/folder.svg" alt="Localfile-icon">
+                     <span class="ms-3">Local Files</span>
+                  </a>
+               </li>
+               
+            </ul>
+            <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+              <li class="flex justify-between px-4 items-center text-gray-400 font-manrope">
+                 <p>PLAYLIST</p>
+                 <span><img src="../Assets/Icon/plus.svg" alt=""></span>
+              </li>
+              
+               <li>
+                 <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/lofi.svg" alt="Recent-icon">
+                     <span class="ms-3">Lo-fi Music</span>
+                  </a>
+               </li>
+               <li>
+                 <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/lofi.svg" alt="favorite-icon">
+                     <span class="ms-3">Best of Bon Jovi</span>
+                  </a>
+               </li>
+               <li>
+                 <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/lofi.svg" alt="Localfile-icon">
+                     <span class="ms-3">Best of John Mayer</span>
+                  </a>
+               </li>
+               
+            </ul>
+         </div>
+      </aside>
+      
+      <main class=" min-h-screen bg-main w-full px-20 flex flex-col gap-10">
+        <nav class="p-4 flex justify-between ">
+           <!-- left-nav -->
+         <div class="flex gap-2 items-center">
+           <img class="p-2 rounded-lg bg-secordnary"  src="../Assets/arrowL.svg" alt="back-icon">
+           <p class="text-gray-500 text-sm pl-3">Home</p>
+           <img src="../Assets/Icon/arrowR.svg" alt="forward-icon">
+           <p class="text-white text-sm">Popular Artist</p>
+         </div>
+         <!-- search-bar -->
+          <div class="flex gap-5">
+            <div class=" flex gap-3 rounded-xl  bg-secordnary px-4 py-3 text-white">
+              <img class="w-5" src="../Assets/Icon/search.svg" alt="">
+              <input type="text" placeholder="Search" class="w-100">
+            </div>
+            <img class="px-4 bg-secordnary rounded-lg" src="../Assets/Icon/ring.svg" alt="">
+          </div>
+        </nav>
+        <!-- banner  -->
+        <section class="relative">
+           <img class="w-full rounded-2xl" src="../Assets/Images/bgbanner.png" alt="background-banner">
+           <div class="flex flex-col gap-8 absolute top-20 left-30">
+              <div class="flex gap-3 ">
+                 <img src="../Assets/Icon/verified.svg" alt="verify-icon">
+                 <p class="text-gray-400 font-manrope text-l">Verified Artist</p>
+              </div>
+              <p class="text-[6em] font-manrope text-white font-bold">Ed Sheeran</p>
+              <div class="flex gap-5 items-center">
+                 <img src="../Assets/Icon/hetphone.svg" alt="hetphone-icon">
+                 <p class="text-gray-100  text-l">82,736,050 <span class="text-gray-400 font-thin">monthly listeners</span></p>
+              </div>
+           </div>
+           <img class="absolute bottom-0 right-30 w-[35%]" src="../Assets/Images/MainImage.png" alt="Ed Sheeran-image ">
+        </section>
+  
+        <!-- Popular Releases -->
+         <section class="flex flex-col gap-5">
+           <div class="flex justify-between text-white font-manrope text-lg">
+              <p class="text-bold">Popular Song</p>
+              <p class="text-green-600">see more</p>
+           </div>
+           <section class="flex flex-col gap-5">
+              <div class="flex justify-between">
+                 <div class="flex gap-5 text-white items-center">
+                    <p>1</p>
+                    <img src="../Assets/Images/badhabit.png" alt="Shiver">
+                    <p>Shiver</p>
+                 </div>
+                 <div class="flex gap-20 text-white items-center">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Icon/hetphone.svg" alt="Shiver">
+                       <p>1,952,015,881</p>
+                    </div>
+                    <div class="flex gap-4">
+                       <img src="../Assets/Icon/clock.svg" alt="clock-icon">
+                       <p>3:27</p>
+                    </div>
+                    <img src="../Assets/Icon/heart.svg" alt="Heart-icon">
+                    <img src="../Assets/Icon/bar.svg" alt="">
+                 </div>
+              </div>
+              <div class="flex justify-between  py-3 bg-gradient-to-r from-main via-[rgba(210,210,210,0.1)] bg-grad to-main">
+                 <div class="flex gap-5 text-white items-center">
+                    <img src="../Assets/Icon/play-circle.svg" class="p-0" alt="play-icon">
+                    <img src="../Assets/Images/Perfect.png" alt="Shiver">
+                    <p class="text-green-700">Shape of you</p>
+                 </div>
+                 <div class="flex gap-20 text-white items-center">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Icon/hetphone.svg" alt="Shiver">
+                       <p>1,952,015,881</p>
+                    </div>
+                    <div class="flex gap-4">
+                       <img src="../Assets/Icon/clock.svg" alt="clock-icon">
+                       <p>3:27</p>
+                    </div>
+                    <img src="../Assets/Icon/heart.svg" alt="Heart-icon">
+                    <img src="../Assets/Icon/bar.svg" alt="">
+                 </div>
+              </div>
+           </section>
+         </section>
+  
+  
+      </main>
+  
+     <aside class="w-80 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+         <section class="h-full py-4 overflow-y-auto bg-secordnary flex flex-col gap-8 px-4">
+          <div class="flex items-center w-50 gap-2 justify-between">
+              <img src="../Assets/Images/profile.png" alt="profile">
+              <div class="flex flex-col gap-1">
+                 <p class="text-white font-manrope text-sm">James Rodriguez</p>
+                 <div class="flex items-center text-gray-400 gap-2  text-xs">
+                 <p>Premium</p>
+                 <p>.</p>
+                 <img src="../Assets/Icon/crown.svg" alt="">
+                 </div>
+              </div>
+              <img src="../Assets/Images/arrowD.svg" alt="">
+          </div>
+          <section class="flex flex-col gap-4">
+              <div class="flex justify-between ">
+                 <p class="text-white ">Fans Also Like</p>
+                 <p class="text-green-500">See All</p>
+              </div>
+              <div class="relative">
+                 <img class="" src="../Assets/Images/banner.png" alt="man-image">
+                 <div class="absolute bottom-0 left-0 right-0 bg-black opacity-70 text-white flex flex-col gap-2 p-3 px-5">
+                    <p class="text-sm font-manrope">James Arthur</p>
+                    <div class="flex items-center gap-2 text-xs">
+                       <p class="font-thin">Artist</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="flex gap-3 w-full justify-center">
+                 <p class="w-2 h-2 rounded-full bg-white"></p>
+                 <p class="w-2 h-2 rounded-full bg-gray-500"></p>
+                 <p class="w-2 h-2 rounded-full bg-gray-500"></p>
+                 <p class="w-2 h-2 rounded-full bg-gray-500"></p>
+              </div>
+           </section>
+           <section>
+              <div class="flex items-center justify-between">
+                 <p class="text-white font-manrope text-sm">Recent Played</p>
+                 <p class="text-green-500">See All</p>
+              </div>
+              <section>
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/Perfect.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Perfect</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">2min ago</p>
+                 </div>
+  
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/Roman_Picisan.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Roman Picisan</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Hanin Dhiya, Ah..</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">8min ago</p>
+                 </div>
+  
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/Tittle.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Tittle (Deluxe)</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Meghan Trainor</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">2hr ago</p>
+                 </div>
+                 
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/Shiver.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Shiver</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">6hr ago</p>
+                 </div>
+  
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/Feel.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Feel Something</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Jaymes Young</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">11hr ago</p>
+                 </div>
+  
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/sharp.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Shape of You</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">14hr ago</p>
+                 </div>
+                 <div class="flex items-center justify-between py-2">
+                    <div class="flex gap-4">
+                       <img src="../Assets/Images/badhabit.png" alt="Song-Perfect">
+                       <div class="flex flex-col gap-1">
+                          <p class="text-white font-manrope text-[13px]">Bad Habits</p>
+                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                       </div>
+                    </div>
+                    <p class="text-xs text-gray-300 font-thin text-[10px]">20hr ago</p>
+                 </div>
+              </section>
+           </section>
+           
+         </section>
+  
+  
+      </aside>
+  
+    </section>
+    <footer class="flex flex-col absolute bottom-0 w-full bg-[rgba(9,9,9,0.8)] h-24">
+      <img src="../Assets/Icon/song_bar.jpg" class="h-1" alt="">
+      <section class="flex justify-between w-full px-10 pt-5">
+         <!-- song playing title -->
+         <section class="flex items-center gap-5">
+            <img src="../Assets/Images/Perfect.png" alt="icon-shapofyou" class="w-15">
+            <div class="flex flex-col text-white gap-2">
+               <p class="text-s">Shape of you</p>
+               <p class="text-xs font-thin">Ed Sheeran</p>
+            </div>
+            <img class="w-7 ml-2" src="../Assets/Icon/heart.svg" alt="heart-icon">
+         </section>
+         <!-- song playing control -->
+         <section class="flex gap-6">
+            <img src="../Assets/Icon/shuffle.svg" alt="" class="w-7">
+            <img src="../Assets/Icon/back.svg" alt="" class="w-7">
+            <img src="../Assets/Icon/pause.svg" alt="" class="w-10">
+            <img src="../Assets/Icon/forward.svg" alt="" class="w-7">
+            <img src="../Assets/Icon/repeate-one.svg" alt="" class="w-7">
+         </section>
+         <section class="flex text-white items-center gap-7">
+            <p>1:45/4:42</p>
+            <img src="../Assets/Icon/speaker.svg" alt="speaker">
+            <img src="../Assets/Icon/small_bar.svg" alt="bar-icons">
+            <img src="../Assets/Icon/music-filter.svg" alt="">
+         </section>
+      </section>
+    </footer>
+</body>
+</html>

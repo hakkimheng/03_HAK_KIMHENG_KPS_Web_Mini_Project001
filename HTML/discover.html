@@ -25,11 +25,11 @@
     </style>
 </head>
 <body>
-    <section>
+    <section class="flex">
         <aside id="separator-sidebar" class="w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
             <div class="h-full pl-3 py-4 overflow-y-auto bg-secordnary">
              <div class="flex items-center w-50 pb-5">
-                 <img src="../Assets/Images/Logo.svg" alt="Logo-icon">
+                 <img src="../Assets/Images/HomePage/Logo.svg" alt="Logo-icon">
              </div>
                <ul class="space-y-2 font-medium">
                   <li>
@@ -125,7 +125,211 @@
                </ul>
             </div>
          </aside>
-         
+         <main class=" min-h-screen bg-main w-full px-20 flex flex-col gap-5">
+            <nav class="p-4 pb-0 flex justify-between ">
+               <!-- left-nav -->
+             <div class="flex gap-5 items-center">
+               <img class="p-2 rounded-lg bg-secordnary"  src="../Assets/arrowL.svg" alt="back-icon">
+               <img src="../Assets/Icon/arrowR.svg" alt="forward-icon">
+             </div>
+             <!-- search-bar -->
+              <div class="flex gap-5">
+                <div class=" flex gap-3 rounded-xl  bg-secordnary px-4 py-3 text-white">
+                  <img class="w-5" src="../Assets/Icon/search.svg" alt="">
+                  <input type="text" placeholder="Search" class="w-100">
+                </div>
+                <img class="px-4 bg-secordnary rounded-lg" src="../Assets/Icon/ring.svg" alt="">
+              </div>
+            </nav>
+            <!-- Good afernoon -->
+            <section class="flex flex-col gap-7">
+                <p class="text-white text-4xl font-bold ">Good Afternoon</p>
+                <section class="flex w-full gap-5">
+                    <section class="flex flex-col w-[50%]  gap-5">
+                        <!-- Urdunama -->
+                        <div class="flex items-center bg-[#2a2a2a] rounded-md">
+                            <img src="../Assets/Images/Discover/Urdunama.png" class="rounded-md" alt="Urdunama">
+                            <p class="text-white">Urdunama</p>
+                        </div>
+                        <!-- Conversations with Tyler -->
+                        <div class="flex items-center bg-[#2a2a2a] rounded-md">
+                            <img src="../Assets/Images/Discover/Conversations.png" class="rounded-md" alt="Urdunama">
+                            <p class="text-white">Conversations with Tyler</p>
+                        </div>
+                    </section>
+                    <section class="flex flex-col w-[50%] gap-5">
+                        <!-- Lenny's Podcast: Product | Growth | Career -->
+                        <div class="flex items-center bg-[#2a2a2a] rounded-md">
+                            <img src="../Assets/Images/Discover/Lenny.png" class="rounded-md" alt="Urdunama">
+                            <p class="text-white">Lenny's Podcast: Product | Growth | Career</p>
+                        </div>
+                        <!-- New York -->
+                        <div class="flex items-center bg-[#2a2a2a] rounded-md">
+                            <img src="../Assets/Images/Discover/NewYork.png" class="rounded-md" alt="Urdunama">
+                            <p class="text-white">New York</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <!-- Episode For You -->
+             <section>
+                <p>Episode For You</p>
+                <section class="flex">
+                    <div class="flex flex-col">
+                        
+
+                    </div>
+                </section>
+             </section>
+        </main>
+        <aside class="w-120 h-screen bg-[#0d0d0d]  transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+            <section class="h-full overflow-y-auto bg-[#0d0d0d] rounded-tl-3xl border-2 border-l-[#333333] border-t-[#333333] flex justify-center">
+                <section class="flex flex-col gap-10 ">
+                    <p class="text-white font-bold text-xl pt-8">My Friend</p>
+                    <!-- Kathryn Murphy -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Kathryn.png" class="w-13" alt="Kathryn">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Kathryn Murphy
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-green-600 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Listening: Gavin Mikhail</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bessie Cooper -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Bessie.png" class="w-13" alt="Bessie Cooper">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Bessie Cooper
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Absent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jane Cooper -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Jane.png" class="w-13" alt="Kathryn">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Jane Cooper
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-green-600 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Listening: C4C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Esther Howard -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Esther.png" class="w-13" alt="Esther Howard">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Esther Howard
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-green-600 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Listening: Sleepy Fish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Leslie Alexander -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Leslie.png" class="w-13" alt="Esther Howard">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Leslie Alexander
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Absent</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arlene McCoy -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Arlene.png" class="w-13" alt="Arlene McCoy">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Arlene McCoy
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-green-600 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Listening: WYS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Courtney Henry -->
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../Assets/Images/Discover/Profile/Courtney.png" class="w-13" alt="Courtney Henry">
+                        </div>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-white">
+                                Courtney Henry
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
+                                <p class=" font-thin text-s text-gray-400">Absent</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#333333] text-white text-center py-4 px-6 rounded-2xl">View All</div>
+                </section>
+            </section>
+  
+  
+      </aside>
+  
     </section>
+
+    <footer class="flex flex-col absolute bottom-0 w-full bg-[rgba(9,9,9,0.8)] h-24">
+        <img src="../Assets/Icon/song_bar.jpg" class="h-1" alt="">
+        <section class="flex justify-between w-full px-10 pt-5">
+           <!-- song playing title -->
+           <section class="flex items-center gap-5">
+              <img src="../Assets//Images/HomePage/Perfect.png" alt="icon-shapofyou" class="w-15">
+              <div class="flex flex-col text-white gap-2">
+                 <p class="text-s">Shape of you</p>
+                 <p class="text-xs font-thin">Ed Sheeran</p>
+              </div>
+              <img class="w-7 ml-2" src="../Assets/Icon/heart.svg" alt="heart-icon">
+           </section>
+           <!-- song playing control -->
+           <section class="flex gap-6">
+              <img src="../Assets/Icon/shuffle.svg" alt="" class="w-7">
+              <img src="../Assets/Icon/back.svg" alt="" class="w-7">
+              <img src="../Assets/Icon/pause.svg" alt="" class="w-10">
+              <img src="../Assets/Icon/forward.svg" alt="" class="w-7">
+              <img src="../Assets/Icon/repeate-one.svg" alt="" class="w-7">
+           </section>
+           <section class="flex text-white items-center gap-7">
+              <p>1:45/4:42</p>
+              <img src="../Assets/Icon/speaker.svg" alt="speaker">
+              <img src="../Assets/Icon/small_bar.svg" alt="bar-icons">
+              <img src="../Assets/Icon/music-filter.svg" alt="">
+           </section>
+        </section>
+      </footer>
 </body>
 </html>

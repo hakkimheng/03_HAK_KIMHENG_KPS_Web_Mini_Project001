@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
@@ -42,7 +42,7 @@
                   </a>
                </li>
                <li>
-                  <a href="#" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                  <a href="discover.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
                   
                      <img src="../Assets/Icon/discover.svg" alt="">
                      <span class="flex-1 ms-3 whitespace-nowrap">Discover</span>
@@ -124,8 +124,8 @@
          </div>
       </aside>
       
-      <main class=" min-h-screen bg-main w-full px-20 flex flex-col gap-10">
-        <nav class="p-4 flex justify-between ">
+      <main class=" min-h-screen bg-main w-full px-20 flex flex-col gap-5">
+        <nav class="p-4 pb-0 flex justify-between ">
            <!-- left-nav -->
          <div class="flex gap-2 items-center">
            <img class="p-2 rounded-lg bg-secordnary"  src="../Assets/arrowL.svg" alt="back-icon">
@@ -144,27 +144,85 @@
         </nav>
         <!-- banner  -->
         <section class="relative">
-           <img class="w-full rounded-2xl" src="../Assets/Images/bgbanner.png" alt="background-banner">
-           <div class="flex flex-col gap-8 absolute top-20 left-30">
-              <div class="flex gap-3 ">
+           <img class=" rounded-2xl w-full h-85" src="../Assets/Images/bgbanner.png" alt="background-banner">
+           <div class="flex flex-col gap-5 absolute top-10 left-30">
+              <div class="flex gap-3">
                  <img src="../Assets/Icon/verified.svg" alt="verify-icon">
                  <p class="text-gray-400 font-manrope text-l">Verified Artist</p>
               </div>
-              <p class="text-[6em] font-manrope text-white font-bold">Ed Sheeran</p>
+              <p class="text-[4em] font-manrope text-white font-bold">Ed Sheeran</p>
               <div class="flex gap-5 items-center">
                  <img src="../Assets/Icon/hetphone.svg" alt="hetphone-icon">
                  <p class="text-gray-100  text-l">82,736,050 <span class="text-gray-400 font-thin">monthly listeners</span></p>
               </div>
+              <div class="flex gap-5">
+               <button class="bg-green-600  px-8 py-3 rounded-3xl text-white text-Xl font-manrope">PLAY</button>
+               <button class="flex gap-3 border-white border px-6 py-3 rounded-3xl">
+                  <img src="../Assets/Icon/following.svg" alt="following"> <span class="text-white font-manrope text-Xl">FOLLOWING</span></button>
+              </div>
            </div>
-           <img class="absolute bottom-0 right-30 w-[35%]" src="../Assets/Images/MainImage.png" alt="Ed Sheeran-image ">
+           <img class="absolute bottom-0 right-30 w-[30%]" src="../Assets/Images/MainImage.png" alt="Ed Sheeran-image ">
         </section>
   
         <!-- Popular Releases -->
          <section class="flex flex-col gap-5">
-           <div class="flex justify-between text-white font-manrope text-lg">
-              <p class="text-bold">Popular Song</p>
-              <p class="text-green-600">see more</p>
-           </div>
+            <div class="flex justify-between font-manrope text-lg text-bold">
+               <p class="text-white">Popular Releases</p>
+               <p class="text-green-600 ">See All</p>
+            </div>
+            <section class="flex gap-10">
+               <div class="flex flex-col gap-2">
+                  <img src="../Assets/Images/divide.png" alt="Divide-icon" class="w-40 rounded-2xl">
+                  <div class="flex flex-col">
+                     <p class="text-white font-manrope">Divide</p>
+                     <p class="font-thin text-gray-400 text-[0.8em]">2017 . Album</p>
+                  </div>
+               </div>
+
+               <div class="flex flex-col gap-2">
+                  <img src="../Assets/Images/X.png" alt="X-icon" class="w-40 rounded-2xl">
+                  <div class="flex flex-col">
+                     <p class="text-white font-manrope">X</p>
+                     <p class="font-thin text-gray-400 text-[0.8em]">2015 . Album</p>
+                  </div>
+               </div>
+
+               <div class="flex flex-col gap-2">
+                  <img src="../Assets/Images/no6.png" alt="no6-icon" class="w-40 rounded-2xl">
+                  <div class="flex flex-col">
+                     <p class="text-white font-manrope">No 6</p>
+                     <p class="font-thin text-gray-400 text-[0.8em]">2019 . Album</p>
+                  </div>
+               </div>
+
+               <div class="flex flex-col gap-2">
+                  <img src="../Assets/Images/Equals.png" alt="Equals-icon" class="w-40 rounded-2xl">
+                  <div class="flex flex-col">
+                     <p class="text-white font-manrope">Equal</p>
+                     <p class="font-thin text-gray-400 text-[0.8em]">2021 . Album</p>
+                  </div>
+               </div>
+
+               <div class="flex flex-col gap-2">
+                  <img src="../Assets/Images/peru.png" alt="peru-icon" class="w-40 rounded-2xl">
+                  <div class="flex flex-col">
+                     <p class="text-white font-manrope">Peru</p>
+                     <p class="font-thin text-gray-400 text-[0.8em]">Latest Releases • S..</p>
+                  </div>
+               </div>
+
+               <div class="flex flex-col gap-2">
+                  <img src="../Assets/Images/multi.png" alt="multi-icon" class="w-40 rounded-2xl">
+                  <div class="flex flex-col">
+                     <p class="text-white font-manrope">Multiply</p>
+                     <p class="font-thin text-gray-400 text-[0.8em]">2014 . Album</p>
+                  </div>
+               </div>
+            </section>
+         </section>
+        <!-- Popular Releases -->
+         <section class="flex flex-col gap-5">
+            <p class="text-bold  text-white font-manrope text-lg">Popular Song</p>
            <section class="flex flex-col gap-5">
               <div class="flex justify-between">
                  <div class="flex gap-5 text-white items-center">

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+   @import "tailwindcss";
+   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+      @theme {
+        --color-secordnary: #212121;
+        --color-primary: #fff;
+        --color-hover: #282828;
+        --color-main: #121212;
+        --font-manrope: "Manrope", serif;
+      }
+      @font-face {
+         font-family: "manrope";
+         src: url(../Assets/fonts/Manrope-SemiBold.ttf);
+         font-weight: semi-bold;
+      }
+    </style>
+</head>
+<body>
+    <section class="flex bg-main gap-6">
+        <aside id="separator-sidebar" class="w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+            <div class="h-full pl-3 py-4 overflow-y-auto bg-secordnary">
+             <div class="flex items-center w-50 pb-5">
+                 <img src="../Assets/Images/HomePage/Logo.svg" alt="Logo-icon">
+             </div>
+               <ul class="space-y-2 font-medium">
+                  <li>
+                     <a href="index.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                         <div class="flex ">
+                             <img src="../Assets/Icon/homenotclick.svg" alt="home icon">
+                             <span class="ms-3">Home</span>
+                         </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="discover.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/discover.svg" alt="discover-icon">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Discover</span>
+     
+                     </a>
+                  </li>
+                  <li>
+                     <a href="radio.html" class="flex items-center justify-between p-2 text-green-600 rounded-lg hover:bg-hover group">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" d="M22 10V17C22 20 20 22 17 22H7C4 22 2 20 2 17V10C2 7.26 3.67 5.34999 6.25 5.04999C6.49 5.00999 6.74 5 7 5H17C20 5 22 7 22 10Z" fill="green"/>
+                            <path d="M7.75 2V5H7C6.74 5 6.49 5.00999 6.25 5.04999V2C6.25 1.59 6.59 1.25 7 1.25C7.41 1.25 7.75 1.59 7.75 2Z" fill="green"/>
+                            <path d="M7.88 16C9.26072 16 10.38 14.8807 10.38 13.5C10.38 12.1193 9.26072 11 7.88 11C6.49929 11 5.38 12.1193 5.38 13.5C5.38 14.8807 6.49929 16 7.88 16Z" fill="green"/>
+                            <path d="M17.88 12.25H13.88C13.47 12.25 13.13 11.91 13.13 11.5C13.13 11.09 13.47 10.75 13.88 10.75H17.88C18.29 10.75 18.63 11.09 18.63 11.5C18.63 11.91 18.29 12.25 17.88 12.25Z" fill="green"/>
+                            <path d="M14.38 16.25H13.88C13.47 16.25 13.13 15.91 13.13 15.5C13.13 15.09 13.47 14.75 13.88 14.75H14.38C14.79 14.75 15.13 15.09 15.13 15.5C15.13 15.91 14.79 16.25 14.38 16.25Z" fill="green"/>
+                            <path d="M17.88 16.25H17.38C16.97 16.25 16.63 15.91 16.63 15.5C16.63 15.09 16.97 14.75 17.38 14.75H17.88C18.29 14.75 18.63 15.09 18.63 15.5C18.63 15.91 18.29 16.25 17.88 16.25Z" fill="green"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Radio</span>
+                        
+                     </a>
+                  </li>
+                  <li>
+                     <a href="albums.html" class="flex items-center justif-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/album.svg" alt="Albums-icon">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Albums</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/podcast.svg" alt="Podcasts-icon">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Podcasts</span>
+                     </a>
+                  </li>
+                
+                 
+               </ul>
+               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+                 <li class="text-gray-400 pl-3 font-manrope">LIBRARY</li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/recent.svg" alt="Recent-icon">
+                        <span class="ms-3">Recently Added</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/favorite.svg" alt="favorite-icon">
+                        <span class="ms-3">favorite Songs</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/folder.svg" alt="Localfile-icon">
+                        <span class="ms-3">Local Files</span>
+                     </a>
+                  </li>
+                  
+               </ul>
+               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+                 <li class="flex justify-between px-4 items-center text-gray-400 font-manrope">
+                    <p>PLAYLIST</p>
+                    <span><img src="../Assets/Icon/plus.svg" alt=""></span>
+                 </li>
+                 
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/lofi.svg" alt="Recent-icon">
+                        <span class="ms-3">Lo-fi Music</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/lofi.svg" alt="favorite-icon">
+                        <span class="ms-3">Best of Bon Jovi</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/lofi.svg" alt="Localfile-icon">
+                        <span class="ms-3">Best of John Mayer</span>
+                     </a>
+                  </li>
+                  
+               </ul>
+            </div>
+         </aside>
+         <main class=" min-h-screen flex flex-col gap-15">
+            <nav class="p-4 pb-0 flex justify-between ">
+                <!-- left-nav -->
+              <div class="flex gap-2 items-center">
+                <img class="p-2 rounded-lg bg-secordnary"  src="../Assets/arrowL.svg" alt="back-icon">
+                <p class="text-gray-500 text-sm pl-3">Home</p>
+                <img src="../Assets/Icon/arrowR.svg" alt="forward-icon">
+                <p class="text-white text-sm">Radio</p>
+              </div>
+              <!-- search-bar -->
+               <div class="flex gap-5">
+                 <div class=" flex gap-3 rounded-xl  bg-secordnary px-4 py-3 text-white">
+                   <img class="w-5" src="../Assets/Icon/search.svg" alt="">
+                   <input type="text" placeholder="Search" class="w-100">
+                 </div>
+                 <img class="px-4 bg-secordnary rounded-lg" src="../Assets/Icon/ring.svg" alt="">
+               </div>
+               <div></div>
+             </nav>
+
+             <section class="flex flex-col gap-5 mx-20">
+                <p class="text-white font-bold text-2xl">Browse All</p>
+                <section class="flex flex-col items-center gap-5">
+                    <section class="flex gap-5">
+                        <div class="w-56 h-56 overflow-hidden bg-[#26856b] text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Podcasts
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/podcast.jpeg"
+                                alt="Audiobooks Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#283EA3] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Audiobooks
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/Audiobooks.jpeg"
+                                alt="Audiobooks"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#1E3264] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Make For You
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/madeforyou.png"
+                                alt="Make For YouIllustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Charts
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/chart.jpeg"
+                                alt="Charts Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#E8115B] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            New Releases
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/newReleases.jpeg"
+                                alt="New Releases Illustration"
+                                
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+    
+                    </section>
+                    <section class="flex gap-5">
+                        <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Discover
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/discovery.jpeg"
+                                alt="Discover Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#7358FF] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Live Event
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/liveEvent.jpeg"
+                                alt="Live Event Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#B49BC8] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Hip-Hop
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/hiphop.jpeg"
+                                alt="Hip-Hop Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#F037A5] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Pop
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/pop.jpeg"
+                                alt="Pop Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#9CF0E1] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Country
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/contry.jpeg"
+                                alt="Country Illustration"
+                                
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+    
+                    </section>
+                    <section class="flex gap-5">
+                        <div class="w-56 h-56 bg-[#E1118B] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Latin
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/latin.jpeg"
+                                alt="Latin Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                        <div class="w-56 h-56 bg-[#D7F27D] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Rock
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/rock.jpeg"
+                                alt="Rock Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Summer
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/summer.jpeg"
+                                alt="Summer"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                          
+                          <div class="w-56 h-56 bg-[#777777] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            Workout
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/workout.jpeg"
+                                alt="Workout Illustration"
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+                       
+                          <div class="w-56 h-56 bg-[#DC148C] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                            R&B
+                            <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
+                              <img
+                                src="../Assets/Images/Radio/r&b.jpeg"
+                                alt="R&B Illustration"
+                                
+                                class="w-28 h-28 rounded-br-xl rotate-30"
+                              />
+                            </div>
+                          </div>
+    
+                    </section>
+                </section>
+             </section>
+           
+        </main>
+        <footer class="flex flex-col absolute bottom-0 w-full bg-gradient-to-r from-[#AF2896] to-[#509BF5] h-[67px]">
+            <section class="flex justify-between items-center h-full px-5">
+                <div class="flex flex-col text-white font-thin text-[15px]">
+                    <p>
+                        Preview of Beatby.com
+                    </p>
+                    <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                </div>
+                <div >
+                    <a class=" bg-white rounded-3xl px-7 py-4 text-[15px] font-bold" href="#">Sign Up Free</a>
+                </div>
+            </section>
+          </footer>
+    </section>
+
+</body>
+</html>

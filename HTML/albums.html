@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+   @import "tailwindcss";
+   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+      @theme {
+        --color-secordnary: #212121;
+        --color-primary: #fff;
+        --color-hover: #282828;
+        --color-main: #121212;
+        --font-manrope: "Manrope", serif;
+      }
+      @font-face {
+         font-family: "manrope";
+         src: url(../Assets/fonts/Manrope-SemiBold.ttf);
+         font-weight: semi-bold;
+      }
+    </style>
+</head>
+<body>
+
+    <section class="flex bg-main gap-6">
+        <aside id="separator-sidebar" class="w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+            <div class="h-full pl-3 py-4 overflow-y-auto bg-secordnary">
+             <div class="flex items-center w-50 pb-5">
+                 <img src="../Assets/Images/HomePage/Logo.svg" alt="Logo-icon">
+             </div>
+               <ul class="space-y-2 font-medium">
+                  <li>
+                     <a href="index.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                         <div class="flex ">
+                             <img src="../Assets/Icon/homenotclick.svg" alt="home icon">
+                             <span class="ms-3">Home</span>
+                         </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="discover.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                     <img src="../Assets/Icon/discover.svg" alt="discover-icon">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Discover</span>
+     
+                     </a>
+                  </li>
+                  <li>
+                     <a href="radio.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/redio.svg" alt="Radio-icon">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Radio</span>
+                        
+                     </a>
+                  </li>
+                  <li>
+                     <a href="albums.html" class="flex items-center justif-between p-2 text-green-600 rounded-lg hover:bg-hover group">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M16.19 2H7.82001C4.18001 2 2.01001 4.17 2.01001 7.81V16.18C2.01001 19.82 4.18001 21.99 7.82001 21.99H16.19C19.83 21.99 22 19.82 22 16.18V7.81C22 4.17 19.83 2 16.19 2Z" fill="green"/>
+                        <path d="M15.62 7.09996L13.33 6.34001C12.75 6.14001 12.16 6.21996 11.71 6.53996C11.26 6.85996 11.01 7.39999 11.01 8.00999V8.61998V12.8C10.61 12.58 10.16 12.45 9.66998 12.45C8.12998 12.45 6.87 13.71 6.87 15.25C6.87 16.79 8.12998 18.05 9.66998 18.05C11.21 18.05 12.47 16.79 12.47 15.25V10.7C12.48 10.71 12.5 10.71 12.51 10.72L14.8 11.48C15.01 11.55 15.23 11.59 15.44 11.59C15.8 11.59 16.14 11.49 16.42 11.28C16.87 10.96 17.12 10.42 17.12 9.80998V9.2C17.12 8.29 16.48 7.38996 15.62 7.09996ZM9.66998 16.59C8.92998 16.59 8.34003 15.99 8.34003 15.26C8.34003 14.52 8.93998 13.92 9.66998 13.92C10.41 13.92 11.01 14.52 11.01 15.26C11.01 15.99 10.41 16.59 9.66998 16.59Z" fill="green"/>
+                        </svg>
+                        
+                        <span class="flex-1 ms-3 whitespace-nowrap">Albums</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/podcast.svg" alt="Podcasts-icon">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Podcasts</span>
+                     </a>
+                  </li>
+                
+                 
+               </ul>
+               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+                 <li class="text-gray-400 pl-3 font-manrope">LIBRARY</li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/recent.svg" alt="Recent-icon">
+                        <span class="ms-3">Recently Added</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/favorite.svg" alt="favorite-icon">
+                        <span class="ms-3">favorite Songs</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/folder.svg" alt="Localfile-icon">
+                        <span class="ms-3">Local Files</span>
+                     </a>
+                  </li>
+                  
+               </ul>
+               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+                 <li class="flex justify-between px-4 items-center text-gray-400 font-manrope">
+                    <p>PLAYLIST</p>
+                    <span><img src="../Assets/Icon/plus.svg" alt=""></span>
+                 </li>
+                 
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/lofi.svg" alt="Recent-icon">
+                        <span class="ms-3">Lo-fi Music</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/lofi.svg" alt="favorite-icon">
+                        <span class="ms-3">Best of Bon Jovi</span>
+                     </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
+                        <img src="../Assets/Icon/lofi.svg" alt="Localfile-icon">
+                        <span class="ms-3">Best of John Mayer</span>
+                     </a>
+                  </li>
+                  
+               </ul>
+            </div>
+         </aside>
+         <main class=" min-h-screen flex flex-col gap-10">
+            <nav class="p-4 pb-0 flex justify-between ">
+                <!-- left-nav -->
+              <div class="flex gap-2 items-center">
+                <img class="p-2 rounded-lg bg-secordnary"  src="../Assets/arrowL.svg" alt="back-icon">
+                <p class="text-gray-500 text-sm pl-3">Home</p>
+                <img src="../Assets/Icon/arrowR.svg" alt="forward-icon">
+                <p class="text-white text-sm">Albums</p>
+              </div>
+              <!-- search-bar -->
+               <div class="flex gap-5">
+                 <div class=" flex gap-3 rounded-xl  bg-secordnary px-4 py-3 text-white">
+                   <img class="w-5" src="../Assets/Icon/search.svg" alt="">
+                   <input type="text" placeholder="Search" class="w-100">
+                 </div>
+                 <img class="px-4 bg-secordnary rounded-lg" src="../Assets/Icon/ring.svg" alt="">
+               </div>
+               <!-- for make search to center -->
+               <div></div>
+             </nav>
+
+             <!-- Body of albums -->
+             <section class="flex flex-col gap-5">
+
+              <!-- PlayList For You -->
+                <p class="text-white font-bold text-2xl">PlayList For You</p>  
+                <section class="flex items-center gap-5" >
+                  <section class="w-[440px] h-[440px] bg-[#ff9f00] rounded-3xl relative">
+                    <div class="absolute w-full h-full top 0">
+                      <img src="../Assets/Images/Albums/ChilRemix.png" class="rounded-3xl" alt="">
+                     </div>
+                     <div class="absolute w-full h-[50%] bottom-0 rounded-3xl bg-gradient-to-t from-[#ff9f00] to-transparent">
+                     </div>
+                     <p class="text-white text-xl p-7">39 Tracks</p>
+                     <div class="flex gap-7 absolute bottom-7 left-7">
+                      <img src="../Assets/Images/Discover/play.png"alt="">
+                      <div>
+                        <p class="text-white text-lg">Chill Mix</p>
+                        <p class="text-white text-s">Just relax and listen</p>
+                      </div>
+                     </div>
+                  </section>
+                  <section class="w-[440px] h-[440px] bg-[#DC225A] rounded-3xl relative">
+                    <div class="absolute w-full h-full top 0">
+                      <img src="../Assets/Images/Albums/GamerMix.png" class="rounded-3xl" alt="">
+                     </div>
+                     <div class="absolute w-full h-[50%] bottom-0 rounded-3xl bg-gradient-to-t from-[#DC225A] to-transparent">
+                     </div>
+                     <p class="text-white text-xl p-7">47 Tracks</p>
+                     <div class="flex gap-7 absolute bottom-7 left-7">
+                      <img src="../Assets/Images/Discover/play.png"alt="">
+                      <div>
+                        <p class="text-white text-lg">Gammer Mix</p>
+                        <p class="text-white text-s">listen while you play</p>
+                      </div>
+                     </div>
+                  </section>
+                  <section class="w-[440px] h-[440px] bg-[#234EFF] rounded-3xl relative">
+                    
+                    <div class="absolute w-full h-fulls top 0">
+                      <img src="../Assets/Images/Albums/FutureMix.png" class="rounded-3xl" alt="">
+                     </div>
+                     <div class="absolute w-full h-[50%] bottom-0 rounded-3xl bg-gradient-to-t from-[#234EFF] to-transparent">
+                     </div>
+                     <p class="text-white text-xl p-7 ">26 Tracks</p>
+                     <div class="flex gap-7 absolute bottom-7 left-7">
+                      <img src="../Assets/Images/Discover/play.png"alt="">
+                      <div>
+                        <p class="text-white text-lg">Future Mix</p>
+                        <p class="text-white text-s">Of your favorites</p>
+                      </div>
+                     </div>
+                  </section>
+                </section>
+                
+                <section class="flex gap-10">
+                  <!-- What you listen to the most -->
+                  <section class="flex flex-col gap-5">
+                    <p class="text-white font-bold text-2xl">What you listen to the most</p>
+                    <section class="flex gap-4 border-gray-600 border p-5 rounded-2xl">
+                      <img src="../Assets/Images/Discover/chillhopMain.png" class="w-[260px] rounded-xl" alt="">
+                      <section class="flex">
+                        <div class="flex flex-col gap-4">
+                          <img src="../Assets/Images/Discover/sleeply.jpeg" class="w-[120px] h-[120px] rounded-xl" alt="">
+                          <img src="../Assets/Images/Discover/beneath.png" class="w-[120px h-[120px] rounded-xl" alt="">
+                        </div>
+                        <div class="flex">
+                          <img src="" alt="">
+                          <img src="" alt="">
+                        </div>
+                      </section>
+                      <section class="flex">
+                        <div class="flex flex-col gap-4">
+                          <img src="../Assets/Images/Discover/chillhoptail.png" class="w-[120px] h-[120px] rounded-xl" alt="">
+                          <img src="../Assets/Images/Discover/chillhopSummer.png" class="w-[120px h-[120px] rounded-xl" alt="">
+                        </div>
+                        <div class="flex">
+                          <img src="" alt="">
+                          <img src="" alt="">
+                        </div>
+                      </section>
+                      <div class="relative w-10">
+                        <p class="text-[#859DFF] w-40 origin-left-top transform -rotate-90 text-3xl absolute top-25 -right-15">Lo-Fi Music</p>
+                      </div>
+                    </section>
+                  </section>
+
+                  <!-- Tracks of the week -->
+                  <section class="flex flex-col gap-5">
+                    <p class="text-white font-bold text-2xl">Tracks of the week</p>
+                    <section class="flex flex-col gap-4 border-gray-600 border p-5 rounded-2xl">
+                      <section class="flex gap-15">
+                        <div class="flex gap-5">
+                          <img src="../Assets/Images/Discover/sleeply.jpeg" class="w-[70px] h-[70px] rounded-xl" alt="sleeply">
+                          <div class="text-white">
+                            <p class="text-xl">Setting Up Our Beds In Minecraft</p>
+                            <p >Sleepy Fish</p>
+                          </div>
+                        </div>
+                        <section class="flex gap-10 items-center">
+                          <div class="flex gap-2">
+                            <img src="../Assets/Icon/hetphone.svg" class="w[20px] h-[20px]" alt="">
+                            <p class="text-white">311k</p>
+                          </div>
+                          <div class="flex gap-5 border border-gray-500 rounded-full items-center">
+                            <img src="../Assets/Images/Discover/heart_green.png" class="w[20px] h-[20px] pl-5" alt="heart green-icon">
+                          <img src="../Assets/Icon/play_circle.svg" alt="">
+                          </div>
+                        </section>
+                      </section>
+
+                      <!-- Kimi Ja Nakya Dame Mitai -->
+                      <section class="flex gap-15 justify-between">
+                        <div class="flex gap-5">
+                          <img src="../Assets/Images/Albums/kimi.png" class="w-[70px] h-[70px] rounded-xl" alt="Kimi Ja Nakya Dame Mitai">
+                          <div class="text-white">
+                            <p class="text-xl">Kimi Ja Nakya Dame Mitai</p>
+                            <p>Masayoshi Oishi</p>
+                          </div>
+                        </div>
+                        <section class="flex gap-10 items-center">
+                          <div class="flex gap-2">
+                            <img src="../Assets/Icon/hetphone.svg" class="w[20px] h-[20px]" alt="">
+                            <p class="text-white">290k</p>
+                          </div>
+                          <div class="flex gap-5 border border-gray-500 rounded-full items-center">
+                            <img src="../Assets/Images/Discover/heart_green.png" class="w[20px] h-[20px] pl-5" alt="heart green-icon">
+                          <img src="../Assets/Icon/play_circle.svg" alt="">
+                          </div>
+                        </section>
+                      </section>
+
+                      <section class="flex gap-15 justify-between">
+                        <div class="flex gap-5">
+                          <img src="../Assets/Images/Albums/clocks.png" class="w-[70px] h-[70px] rounded-xl" alt="locks forward">
+                          <div class="text-white">
+                            <p class="text-xl">Clocks forward</p>
+                            <p>Psalm Trees</p>
+                          </div>
+                        </div>
+                        <section class="flex gap-10 items-center">
+                          <div class="flex gap-2">
+                            <img src="../Assets/Icon/hetphone.svg" class="w[20px] h-[20px]" alt="">
+                            <p class="text-white">7.350k</p>
+                          </div>
+                          <div class="flex gap-5 border border-gray-500 rounded-full items-center">
+                            <img src="../Assets/Images/Discover/heart_green.png" class="w[20px] h-[20px] pl-5" alt="heart green-icon">
+                          <img src="../Assets/Icon/play_circle.svg" alt="">
+                          </div>
+                        </section>
+                      </section>
+                    </section>
+                  </section>
+
+                </section>
+             </section>
+           
+        </main>
+    </section>
+
+</body>
+</html>

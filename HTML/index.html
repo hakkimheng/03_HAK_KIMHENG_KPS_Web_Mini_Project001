@@ -28,7 +28,7 @@
 <body>
     <section class="flex bg-main gap-6">
       <aside id="separator-sidebar" class="w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-         <div class="h-full pl-3 py-4 overflow-y-auto bg-secordnary">
+         <div class="h-full pl-3 py-4 bg-secordnary">
           <div class="flex items-center w-50 pb-5">
               <img src="../Assets//Images/HomePage/Logo.svg" alt="Logo-icon">
           </div>
@@ -122,7 +122,7 @@
          </div>
       </aside>
       
-      <main class=" min-h-screen  bg-main flex flex-col gap-5">
+      <main class="bg-main flex flex-col gap-5">
         <nav class="p-4 pb-0 flex justify-between ">
            <!-- left-nav -->
          <div class="flex gap-2 items-center">
@@ -168,6 +168,7 @@
                <p class="text-white">Popular Releases</p>
                <p class="text-green-600 ">See All</p>
             </div>
+            <!-- Popular Releases item -->
             <section class="flex gap-10">
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/divide.png" alt="Divide-icon" class="w-40 rounded-2xl">
@@ -218,7 +219,7 @@
                </div>
             </section>
          </section>
-        <!-- Popular Releases -->
+        <!-- Popular Song -->
          <section class="flex flex-col gap-5">
             <p class="text-bold  text-white font-manrope text-lg">Popular Song</p>
            <section class="flex flex-col gap-5">
@@ -266,8 +267,8 @@
   
       </main>
   
-     <aside class="">
-         <section class="h-full py-4 overflow-y-auto bg-secordnary flex flex-col gap-8 px-4">
+     <aside>
+         <section class="h-full py-4 bg-secordnary flex flex-col gap-8 px-4">
           <div class="flex items-center w-50 gap-2 justify-between">
               <img src="../Assets///Images/HomePage/profile.png" alt="profile">
               <div class="flex flex-col gap-1">
@@ -306,7 +307,10 @@
                  <p class="text-white font-manrope text-sm">Recent Played</p>
                  <p class="text-green-500">See All</p>
               </div>
-              <section>
+
+              <!-- Recent Played-->
+              <section class="overflow-y-scroll h-[80%]">
+               <!-- Perfect -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Perfect.png" alt="Song-Perfect">
@@ -317,7 +321,8 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">2min ago</p>
                  </div>
-  
+                 
+                 <!-- Roman Picisan -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Roman_Picisan.png" alt="Song-Perfect">
@@ -328,7 +333,8 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">8min ago</p>
                  </div>
-  
+
+                 <!-- Tittle -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Tittle.png" alt="Song-Perfect">
@@ -339,7 +345,7 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">2hr ago</p>
                  </div>
-                 
+                 <!-- Shiver -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Shiver.png" alt="Song-Perfect">
@@ -350,7 +356,8 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">6hr ago</p>
                  </div>
-  
+                 
+                 <!-- Feel Something -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Feel.png" alt="Song-Perfect">
@@ -361,7 +368,8 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">11hr ago</p>
                  </div>
-  
+                 
+                 <!-- Shape of You -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/sharp.png" alt="Song-Perfect">
@@ -372,6 +380,7 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">14hr ago</p>
                  </div>
+                 <!-- Bad Habits -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/badhabit.png" alt="Song-Perfect">
@@ -382,6 +391,29 @@
                     </div>
                     <p class="text-xs text-gray-300 font-thin text-[10px]">20hr ago</p>
                  </div>
+
+                 <!-- Perfect -->
+                 <div class="flex items-center justify-between py-2">
+                  <div class="flex gap-4">
+                     <img src="../Assets//Images/HomePage/Perfect.png" alt="Song-Perfect">
+                     <div class="flex flex-col gap-1">
+                        <p class="text-white font-manrope text-[13px]">Perfect</p>
+                        <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                     </div>
+                  </div>
+                  <p class="text-xs text-gray-300 font-thin text-[10px]">2min ago</p>
+               </div>
+               <!-- Until you -->
+               <div class="flex items-center justify-between py-2">
+                  <div class="flex gap-4">
+                     <img src="../Assets//Images/HomePage/badhabit.png" alt="Song-Perfect">
+                     <div class="flex flex-col gap-1">
+                        <p class="text-white font-manrope text-[13px]">Until you</p>
+                        <p class="text-gray-400 font-thin text-[11px]">Shayne Ward</p>
+                     </div>
+                  </div>
+                  <p class="text-xs text-gray-300 font-thin text-[10px]">20hr ago</p>
+               </div>
               </section>
            </section>
            

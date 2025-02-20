@@ -8,19 +8,25 @@
 
     <style type="text/tailwindcss">
    @import "tailwindcss";
-   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+   @import "tailwindcss";
 
       @theme {
         --color-secordnary: #212121;
         --color-primary: #fff;
         --color-hover: #282828;
         --color-main: #121212;
-        --font-manrope: "Manrope", serif;
+        --font-bolds : "mainFont";
+        --font-thins : "thins";
       }
       @font-face {
-         font-family: "manrope";
-         src: url(../Assets/fonts/Manrope-SemiBold.ttf);
+         font-family: "mainFont";
+         src: url(../Assets/fonts/HelveticaNeueBlack.otf);
          font-weight: semi-bold;
+      }
+      @font-face {
+         font-family: "thins";
+         src: url(../Assets/fonts/HelveticaNeueMedium.otf);
+         font-weight: thin;
       }
     </style>
 </head>
@@ -31,19 +37,19 @@
              <div class="flex items-center w-50 pb-5">
                  <img src="../Assets/Images/HomePage/Logo.svg" alt="Logo-icon">
              </div>
-               <ul class="space-y-2 font-medium">
+               <ul class="space-y-2 font-thins">
                   <li>
                      <a href="index.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
                          <div class="flex ">
                              <img src="../Assets/Icon/homenotclick.svg" alt="home icon">
-                             <span class="ms-3">Home</span>
+                             <span class="ms-3 font-thins">Home</span>
                          </div>
                      </a>
                   </li>
                   <li>
                      <a href="discover.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
                      <img src="../Assets/Icon/discover.svg" alt="discover-icon">
-                        <span class="flex-1 ms-3 whitespace-nowrap">Discover</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap font-thins">Discover</span>
      
                      </a>
                   </li>
@@ -57,14 +63,14 @@
                             <path d="M14.38 16.25H13.88C13.47 16.25 13.13 15.91 13.13 15.5C13.13 15.09 13.47 14.75 13.88 14.75H14.38C14.79 14.75 15.13 15.09 15.13 15.5C15.13 15.91 14.79 16.25 14.38 16.25Z" fill="green"/>
                             <path d="M17.88 16.25H17.38C16.97 16.25 16.63 15.91 16.63 15.5C16.63 15.09 16.97 14.75 17.38 14.75H17.88C18.29 14.75 18.63 15.09 18.63 15.5C18.63 15.91 18.29 16.25 17.88 16.25Z" fill="green"/>
                         </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Radio</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap font-thins">Radio</span>
                         
                      </a>
                   </li>
                   <li>
                      <a href="albums.html" class="flex items-center justif-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
                         <img src="../Assets/Icon/album.svg" alt="Albums-icon">
-                        <span class="flex-1 ms-3 whitespace-nowrap">Albums</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap font-thins">Albums</span>
                      </a>
                   </li>
                   <li>
@@ -76,8 +82,8 @@
                 
                  
                </ul>
-               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
-                 <li class="text-gray-400 pl-3 font-manrope">LIBRARY</li>
+               <ul class="pt-4 mt-4 space-y-2 font-thins  border-gray-200 dark:border-gray-700">
+                 <li class="text-gray-400 pl-3 font-thins">LIBRARY</li>
                   <li>
                     <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
                         <img src="../Assets/Icon/recent.svg" alt="Recent-icon">
@@ -98,7 +104,7 @@
                   </li>
                   
                </ul>
-               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
+               <ul class="pt-4 mt-4 space-y-2 font-thins  border-gray-200 dark:border-gray-700">
                  <li class="flex justify-between px-4 items-center text-gray-400 font-manrope">
                     <p>PLAYLIST</p>
                     <span><img src="../Assets/Icon/plus.svg" alt=""></span>
@@ -147,10 +153,10 @@
              </nav>
 
              <section class="flex flex-col gap-5 mx-20">
-                <p class="text-white font-bold text-2xl">Browse All</p>
+                <p class="text-white font-bolds text-2xl">Browse All</p>
                 <section class="flex flex-col items-center gap-5">
                     <section class="flex gap-5">
-                        <div class="w-56 h-56 overflow-hidden bg-[#26856b] text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                        <div class="w-56 h-56 overflow-hidden bg-[#26856b] text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Podcasts
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -160,7 +166,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#283EA3] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#283EA3] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Audiobooks
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -170,7 +176,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#1E3264] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#1E3264] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Make For You
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -180,7 +186,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Charts
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -190,7 +196,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#E8115B] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#E8115B] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             New Releases
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -204,7 +210,7 @@
     
                     </section>
                     <section class="flex gap-5">
-                        <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                        <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Discover
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -214,7 +220,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#7358FF] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#7358FF] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Live Event
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -224,7 +230,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#B49BC8] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#B49BC8] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Hip-Hop
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -234,7 +240,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#F037A5] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#F037A5] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Pop
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -244,7 +250,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#9CF0E1] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#9CF0E1] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Country
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -258,7 +264,7 @@
     
                     </section>
                     <section class="flex gap-5">
-                        <div class="w-56 h-56 bg-[#E1118B] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                        <div class="w-56 h-56 bg-[#E1118B] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Latin
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -268,7 +274,7 @@
                               />
                             </div>
                           </div>
-                        <div class="w-56 h-56 bg-[#D7F27D] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                        <div class="w-56 h-56 bg-[#D7F27D] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Rock
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -278,7 +284,7 @@
                               />
                             </div>
                           </div>
-                          <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#8D67AB] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Summer
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -289,7 +295,7 @@
                             </div>
                           </div>
                           
-                          <div class="w-56 h-56 bg-[#777777] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#777777] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             Workout
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -300,7 +306,7 @@
                             </div>
                           </div>
                        
-                          <div class="w-56 h-56 bg-[#DC148C] overflow-hidden text-white font-bold text-xl p-4 rounded-xl relative flex items-start">
+                          <div class="w-56 h-56 bg-[#DC148C] overflow-hidden text-white font-bolds text-xl p-4 rounded-xl relative flex items-start">
                             R&B
                             <div class="absolute bottom-2 right-2 transform translate-x-6 translate-y-6">
                               <img
@@ -319,14 +325,14 @@
         </main>
         <footer class="flex flex-col absolute bottom-0 w-full bg-gradient-to-r from-[#AF2896] to-[#509BF5] h-[67px]">
             <section class="flex justify-between items-center h-full px-5">
-                <div class="flex flex-col text-white font-thin text-[15px]">
+                <div class="flex flex-col text-white font-thins text-[15px]">
                     <p>
                         Preview of Beatby.com
                     </p>
                     <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
                 </div>
                 <div >
-                    <a class=" bg-white rounded-3xl px-7 py-4 text-[15px] font-bold" href="#">Sign Up Free</a>
+                    <a class=" bg-white rounded-3xl px-7 py-4 text-[15px] font-bolds" href="#">Sign Up Free</a>
                 </div>
             </section>
           </footer>

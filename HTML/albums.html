@@ -8,19 +8,24 @@
 
     <style type="text/tailwindcss">
    @import "tailwindcss";
-   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-      @theme {
-        --color-secordnary: #212121;
-        --color-primary: #fff;
-        --color-hover: #282828;
-        --color-main: #121212;
-        --font-manrope: "Manrope", serif;
-      }
-      @font-face {
-         font-family: "manrope";
-         src: url(../Assets/fonts/Manrope-SemiBold.ttf);
-         font-weight: semi-bold;
-      }
+  @theme {
+    --color-secordnary: #212121;
+    --color-primary: #fff;
+    --color-hover: #282828;
+    --color-main: #121212;
+    --font-bolds : "mainFont";
+    --font-thins : "thins";
+  }
+  @font-face {
+    font-family: "mainFont";
+    src: url(../Assets/fonts/HelveticaNeueBlack.otf);
+    font-weight: semi-bold;
+  }
+  @font-face {
+    font-family: "thins";
+    src: url(../Assets/fonts/HelveticaNeueMedium.otf);
+    font-weight: thin;
+  }
     </style>
 </head>
 <body>
@@ -31,7 +36,7 @@
              <div class="flex items-center w-50 pb-5">
                  <img src="../Assets/Images/HomePage/Logo.svg" alt="Logo-icon">
              </div>
-               <ul class="space-y-2 font-medium">
+               <ul class="space-y-2 font-thins">
                   <li>
                      <a href="index.html" class="flex items-center justify-between p-2 text-gray-300 rounded-lg hover:bg-hover group">
                          <div class="flex ">
@@ -73,8 +78,8 @@
                 
                  
                </ul>
-               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
-                 <li class="text-gray-400 pl-3 font-manrope">LIBRARY</li>
+               <ul class="pt-4 mt-4 space-y-2 font-thins  border-gray-200 dark:border-gray-700">
+                 <li class="text-gray-400 pl-3 font-thins">LIBRARY</li>
                   <li>
                     <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
                         <img src="../Assets/Icon/recent.svg" alt="Recent-icon">
@@ -95,8 +100,8 @@
                   </li>
                   
                </ul>
-               <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
-                 <li class="flex justify-between px-4 items-center text-gray-400 font-manrope">
+               <ul class="pt-4 mt-4 space-y-2 font-thins  border-gray-200 dark:border-gray-700">
+                 <li class="flex justify-between px-4 items-center text-gray-400 font-thins">
                     <p>PLAYLIST</p>
                     <span><img src="../Assets/Icon/plus.svg" alt=""></span>
                  </li>
@@ -148,7 +153,7 @@
              <section class="flex flex-col gap-5">
 
               <!-- PlayList For You -->
-                <p class="text-white font-bold text-2xl">PlayList For You</p>  
+                <p class="text-white font-bolds text-2xl">PlayList For You</p>  
                 <section class="flex items-center gap-5" >
                   <section class="w-[440px] h-[440px] bg-[#ff9f00] rounded-3xl relative">
                     <div class="absolute w-full h-full top 0">
@@ -201,7 +206,7 @@
                 <section class="flex gap-10">
                   <!-- What you listen to the most -->
                   <section class="flex flex-col gap-5">
-                    <p class="text-white font-bold text-2xl">What you listen to the most</p>
+                    <p class="text-white font-bolds text-2xl">What you listen to the most</p>
                     <section class="flex gap-4 border-gray-600 border p-5 rounded-2xl">
                       <img src="../Assets/Images/Discover/chillhopMain.png" class="w-[260px] rounded-xl" alt="">
                       <section class="flex">
@@ -232,7 +237,7 @@
 
                   <!-- Tracks of the week -->
                   <section class="flex flex-col gap-5">
-                    <p class="text-white font-bold text-2xl">Tracks of the week</p>
+                    <p class="text-white font-bolds text-2xl">Tracks of the week</p>
                     <section class="flex flex-col gap-4 border-gray-600 border p-5 rounded-2xl">
 
                       <section class="h-65 flex flex-col gap-5 overflow-x-scroll">

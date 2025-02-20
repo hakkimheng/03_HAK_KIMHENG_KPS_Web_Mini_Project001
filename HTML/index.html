@@ -8,19 +8,24 @@
 
     <style type="text/tailwindcss">
    @import "tailwindcss";
-   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
       @theme {
         --color-secordnary: #212121;
         --color-primary: #fff;
         --color-hover: #282828;
         --color-main: #121212;
-        --font-manrope: "Manrope", serif;
+        --font-bolds : "mainFont";
+        --font-thins : "thins";
       }
       @font-face {
-         font-family: "manrope";
-         src: url(../Assets/fonts/Manrope-SemiBold.ttf);
+         font-family: "mainFont";
+         src: url(../Assets/fonts/HelveticaNeueBlack.otf);
          font-weight: semi-bold;
+      }
+      @font-face {
+         font-family: "thins";
+         src: url(../Assets/fonts/HelveticaNeueMedium.otf);
+         font-weight: thin;
       }
     </style>
 
@@ -32,11 +37,11 @@
           <div class="flex items-center w-50 pb-5">
               <img src="../Assets//Images/HomePage/Logo.svg" alt="Logo-icon">
           </div>
-            <ul class="space-y-2 font-medium">
+            <ul class="space-y-2  font-thins">
                <li>
-                  <a href="#" class="flex items-center justify-between p-2 text-green-600 rounded-lg hover:bg-hover group">
-                      <div class="flex ">
-                          <img src="../Assets/Icon/home.svg" alt="home icon">
+                  <a href="index.html" class="flex items-center justify-between p-2 text-green-600 rounded-lg hover:bg-hover group">
+                      <div class="flex">
+                          <img src="../Assets/Icon/home.svg" alt="home-icon">
                           <span class="ms-3">Home</span>
                       </div>
                   </a>
@@ -71,8 +76,8 @@
              
               
             </ul>
-            <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
-              <li class="text-gray-400 pl-3 font-manrope">LIBRARY</li>
+            <ul class="pt-4 mt-4 space-y-2 font-thins  border-gray-200 dark:border-gray-700">
+              <li class="text-gray-400 pl-3 font-thins">LIBRARY</li>
                <li>
                  <a href="#" class="flex items-center p-2 text-gray-300 rounded-lg hover:bg-hover group">
                      <img src="../Assets/Icon/recent.svg" alt="Recent-icon">
@@ -93,8 +98,8 @@
                </li>
                
             </ul>
-            <ul class="pt-4 mt-4 space-y-2 font-medium  border-gray-200 dark:border-gray-700">
-              <li class="flex justify-between px-4 items-center text-gray-400 font-manrope">
+            <ul class="pt-4 mt-4 space-y-2 font-thins  border-gray-200 dark:border-gray-700">
+              <li class="flex justify-between px-4 items-center text-gray-400 font-thins">
                  <p>PLAYLIST</p>
                  <span><img src="../Assets/Icon/plus.svg" alt=""></span>
               </li>
@@ -146,17 +151,17 @@
            <div class="flex flex-col gap-5 absolute top-10 left-30">
               <div class="flex gap-3">
                  <img src="../Assets/Icon/verified.svg" alt="verify-icon">
-                 <p class="text-gray-400 font-manrope text-l">Verified Artist</p>
+                 <p class="text-gray-400 font-bolds text-l">Verified Artist</p>
               </div>
-              <p class="text-[4em] font-manrope text-white font-bold">Ed Sheeran</p>
+              <p class="text-[4em] text-white font-bolds">Ed Sheeran</p>
               <div class="flex gap-5 items-center">
                  <img src="../Assets/Icon/hetphone.svg" alt="hetphone-icon">
-                 <p class="text-gray-100  text-l">82,736,050 <span class="text-gray-400 font-thin">monthly listeners</span></p>
+                 <p class="text-gray-100  text-l">82,736,050 <span class="text-gray-400 font-thins">monthly listeners</span></p>
               </div>
               <div class="flex gap-5">
-               <button class="bg-green-600  px-8 py-3 rounded-3xl text-white text-Xl font-manrope">PLAY</button>
+               <button class="bg-green-600  px-8 py-3 rounded-3xl text-white text-Xl font-bolds">PLAY</button>
                <button class="flex gap-3 border-white border px-6 py-3 rounded-3xl">
-                  <img src="../Assets/Icon/following.svg" alt="following"> <span class="text-white font-manrope text-Xl">FOLLOWING</span></button>
+                  <img src="../Assets/Icon/following.svg" alt="following"> <span class="text-white font-bolds text-Xl">FOLLOWING</span></button>
               </div>
            </div>
            <img class="absolute bottom-0 right-30 w-[30%]" src="../Assets//Images/HomePage/MainImage.png" alt="Ed Sheeran-image ">
@@ -164,7 +169,7 @@
   
         <!-- Popular Releases -->
          <section class="flex flex-col gap-5">
-            <div class="flex justify-between font-manrope text-lg text-bold">
+            <div class="flex justify-between font-bolds text-lg">
                <p class="text-white">Popular Releases</p>
                <p class="text-green-600 ">See All</p>
             </div>
@@ -173,7 +178,7 @@
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/divide.png" alt="Divide-icon" class="w-40 rounded-2xl">
                   <div class="flex flex-col">
-                     <p class="text-white font-manrope">Divide</p>
+                     <p class="text-white font-thins">Divide</p>
                      <p class="font-thin text-gray-400 text-[0.8em]">2017 . Album</p>
                   </div>
                </div>
@@ -181,7 +186,7 @@
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/X.png" alt="X-icon" class="w-40 rounded-2xl">
                   <div class="flex flex-col">
-                     <p class="text-white font-manrope">X</p>
+                     <p class="text-white font-thins">X</p>
                      <p class="font-thin text-gray-400 text-[0.8em]">2015 . Album</p>
                   </div>
                </div>
@@ -189,7 +194,7 @@
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/no6.png" alt="no6-icon" class="w-40 rounded-2xl">
                   <div class="flex flex-col">
-                     <p class="text-white font-manrope">No 6</p>
+                     <p class="text-white font-thins">No 6</p>
                      <p class="font-thin text-gray-400 text-[0.8em]">2019 . Album</p>
                   </div>
                </div>
@@ -197,7 +202,7 @@
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/Equals.png" alt="Equals-icon" class="w-40 rounded-2xl">
                   <div class="flex flex-col">
-                     <p class="text-white font-manrope">Equal</p>
+                     <p class="text-white font-thins">Equal</p>
                      <p class="font-thin text-gray-400 text-[0.8em]">2021 . Album</p>
                   </div>
                </div>
@@ -205,7 +210,7 @@
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/peru.png" alt="peru-icon" class="w-40 rounded-2xl">
                   <div class="flex flex-col">
-                     <p class="text-white font-manrope">Peru</p>
+                     <p class="text-white font-thins">Peru</p>
                      <p class="font-thin text-gray-400 text-[0.8em]">Latest Releases • S..</p>
                   </div>
                </div>
@@ -213,7 +218,7 @@
                <div class="flex flex-col gap-2">
                   <img src="../Assets//Images/HomePage/multi.png" alt="multi-icon" class="w-40 rounded-2xl">
                   <div class="flex flex-col">
-                     <p class="text-white font-manrope">Multiply</p>
+                     <p class="text-white font-thins">Multiply</p>
                      <p class="font-thin text-gray-400 text-[0.8em]">2014 . Album</p>
                   </div>
                </div>
@@ -221,7 +226,7 @@
          </section>
         <!-- Popular Song -->
          <section class="flex flex-col gap-5">
-            <p class="text-bold  text-white font-manrope text-lg">Popular Song</p>
+            <p class="text-bold  text-white font-thins text-lg">Popular Song</p>
            <section class="flex flex-col gap-5">
               <div class="flex justify-between">
                  <div class="flex gap-5 text-white items-center">
@@ -272,7 +277,7 @@
           <div class="flex items-center w-50 gap-2 justify-between">
               <img src="../Assets///Images/HomePage/profile.png" alt="profile">
               <div class="flex flex-col gap-1">
-                 <p class="text-white font-manrope text-sm">James Rodriguez</p>
+                 <p class="text-white font-thins text-sm">James Rodriguez</p>
                  <div class="flex items-center text-gray-400 gap-2  text-xs">
                  <p>Premium</p>
                  <p>.</p>
@@ -289,7 +294,7 @@
               <div class="relative">
                  <img class="" src="../Assets//Images/HomePage/banner.png" alt="man-image">
                  <div class="absolute bottom-0 left-0 right-0 bg-black opacity-70 text-white flex flex-col gap-2 p-3 px-5">
-                    <p class="text-sm font-manrope">James Arthur</p>
+                    <p class="text-sm font-thins">James Arthur</p>
                     <div class="flex items-center gap-2 text-xs">
                        <p class="font-thin">Artist</p>
                     </div>
@@ -304,8 +309,8 @@
            </section>
            <section>
               <div class="flex items-center justify-between">
-                 <p class="text-white font-manrope text-sm">Recent Played</p>
-                 <p class="text-green-500">See All</p>
+                 <p class="text-white font-thins text-sm">Recent Played</p>
+                 <p class="text-green-500 font-thins">See All</p>
               </div>
 
               <!-- Recent Played-->
@@ -315,11 +320,11 @@
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Perfect.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Perfect</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                          <p class="text-white font-thins text-[13px]">Perfect</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Ed Sheeran</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">2min ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">2min ago</p>
                  </div>
                  
                  <!-- Roman Picisan -->
@@ -327,11 +332,11 @@
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Roman_Picisan.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Roman Picisan</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Hanin Dhiya, Ah..</p>
+                          <p class="text-white font-thins text-[13px]">Roman Picisan</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Hanin Dhiya, Ah..</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">8min ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">8min ago</p>
                  </div>
 
                  <!-- Tittle -->
@@ -339,22 +344,22 @@
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Tittle.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Tittle (Deluxe)</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Meghan Trainor</p>
+                          <p class="text-white font-thins text-[13px]">Tittle (Deluxe)</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Meghan Trainor</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">2hr ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">2hr ago</p>
                  </div>
                  <!-- Shiver -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Shiver.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Shiver</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                          <p class="text-white font-thins text-[13px]">Shiver</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Ed Sheeran</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">6hr ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">6hr ago</p>
                  </div>
                  
                  <!-- Feel Something -->
@@ -362,11 +367,11 @@
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/Feel.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Feel Something</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Jaymes Young</p>
+                          <p class="text-white font-thins text-[13px]">Feel Something</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Jaymes Young</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">11hr ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">11hr ago</p>
                  </div>
                  
                  <!-- Shape of You -->
@@ -374,22 +379,22 @@
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/sharp.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Shape of You</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                          <p class="text-white font-thins text-[13px]">Shape of You</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Ed Sheeran</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">14hr ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">14hr ago</p>
                  </div>
                  <!-- Bad Habits -->
                  <div class="flex items-center justify-between py-2">
                     <div class="flex gap-4">
                        <img src="../Assets//Images/HomePage/badhabit.png" alt="Song-Perfect">
                        <div class="flex flex-col gap-1">
-                          <p class="text-white font-manrope text-[13px]">Bad Habits</p>
-                          <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                          <p class="text-white font-thins text-[13px]">Bad Habits</p>
+                          <p class="text-gray-400 font-thins text-[11px]">Ed Sheeran</p>
                        </div>
                     </div>
-                    <p class="text-xs text-gray-300 font-thin text-[10px]">20hr ago</p>
+                    <p class="text-xs text-gray-300 font-thins text-[10px]">20hr ago</p>
                  </div>
 
                  <!-- Perfect -->
@@ -397,22 +402,22 @@
                   <div class="flex gap-4">
                      <img src="../Assets//Images/HomePage/Perfect.png" alt="Song-Perfect">
                      <div class="flex flex-col gap-1">
-                        <p class="text-white font-manrope text-[13px]">Perfect</p>
-                        <p class="text-gray-400 font-thin text-[11px]">Ed Sheeran</p>
+                        <p class="text-white font-thins text-[13px]">Perfect</p>
+                        <p class="text-gray-400 font-thins text-[11px]">Ed Sheeran</p>
                      </div>
                   </div>
-                  <p class="text-xs text-gray-300 font-thin text-[10px]">2min ago</p>
+                  <p class="text-xs text-gray-300 font-thins text-[10px]">2min ago</p>
                </div>
                <!-- Until you -->
                <div class="flex items-center justify-between py-2">
                   <div class="flex gap-4">
                      <img src="../Assets//Images/HomePage/badhabit.png" alt="Song-Perfect">
                      <div class="flex flex-col gap-1">
-                        <p class="text-white font-manrope text-[13px]">Until you</p>
-                        <p class="text-gray-400 font-thin text-[11px]">Shayne Ward</p>
+                        <p class="text-white font-thins text-[13px]">Until you</p>
+                        <p class="text-gray-400 font-thins text-[11px]">Shayne Ward</p>
                      </div>
                   </div>
-                  <p class="text-xs text-gray-300 font-thin text-[10px]">20hr ago</p>
+                  <p class="text-xs text-gray-300 font-thins text-[10px]">20hr ago</p>
                </div>
               </section>
            </section>
